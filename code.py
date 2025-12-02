@@ -114,7 +114,7 @@ geolocator = Nominatim(user_agent="earthquake_monitor")
 
 print("\n🔵 LIVE Earthquake Monitoring Started (alert only ≥ 6.0)\n")
 
-while False:
+while True:
     try:
         new_data = get_new_earthquakes(min_mag=4.0)
 
